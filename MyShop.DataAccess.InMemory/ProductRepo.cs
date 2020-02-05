@@ -13,14 +13,11 @@ namespace MyShop.DataAccess.InMemory
 {
     public class ProductRepo
     {
-
-
-        ObjectCache cache = MemoryCache.Default;
+       ObjectCache cache = MemoryCache.Default;
         List<Product> products;
-
         public ProductRepo()
         {
-            products = cache["product"] as List<Product>;
+            products = cache["products"] as List<Product>;
             if (products == null)
             {
                 products = new List<Product>();
