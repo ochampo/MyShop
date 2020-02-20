@@ -8,12 +8,12 @@ using System.Web.Mvc;
 
 namespace MyShop.WebUI.Controllers
 {
-    public class ProductCategoryManagerController2 : Controller
+    public class ProductCategoryManagerController : Controller
     {
         ProductCategoryRepo context;
 
 
-        public ProductCategoryManagerController2()
+        public ProductCategoryManagerController()
         {
             context = new ProductCategoryRepo();
         }
